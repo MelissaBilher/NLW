@@ -7,7 +7,11 @@ body {
 body {
   display: grid;
   place-items: center;
-  background: grey;
+}
+main {
+  background: url(images/Mobile.png);
+  width: 375px;
+  height: 812px;
 }
 h1 {
   font-size: 1.5rem;
