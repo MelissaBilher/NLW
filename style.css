@@ -29,9 +29,15 @@ main {
 .avatar {
   width: 10rem;
   margin: 11.5rem auto 0;
+  position: relative;
 }
 .avatar span {
   position: absolute;
+  top: -15px;
+}
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
 }
 
 h1 {
