@@ -4,6 +4,7 @@
 }
 html,
 body {
+  --black: hsl(240, 6%, 13%);
   --gray: hsl(240, 9%, 89%);
   height: 100%;
   font-family: 'roboto', sans-serif;
@@ -24,6 +25,13 @@ main {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+}
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+}
+.avatar span {
+  position: absolute;
 }
 
 h1 {
