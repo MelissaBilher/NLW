@@ -4,8 +4,10 @@
 }
 html,
 body {
+  --gray: hsl(240, 9%, 89%);
   height: 100%;
   font-family: 'roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 body {
   display: grid;
@@ -15,6 +17,7 @@ main {
   background: url(images/Mobile.png);
   width: 375px;
   height: 812px;
+  color: var(--gray);
 }
 .container {
   max-width: 250px;
