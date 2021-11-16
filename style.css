@@ -9,6 +9,7 @@ body {
   height: 100%;
   font-family: 'roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+  background: var(--black)
 }
 body {
   display: grid;
@@ -19,6 +20,7 @@ main {
   width: 375px;
   height: 812px;
   color: var(--gray);
+
 }
 .container {
   max-width: 250px;
