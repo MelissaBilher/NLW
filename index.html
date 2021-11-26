@@ -14,18 +14,6 @@ HTML = HyperText (Hiper texto = é um texto com link) Markup (Marcação = são 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <script>
-    const LinksSocialMedia = {
-      github: 'satheler',
-      youtube: 'UCThu5JcyuoFYjPdorC5GpHQ',
-      facebook: 'gustavo.satheler',
-      instagram: 'gustavosatheler'
-    }
-
-    function changeSocialMediaLinks() {
-      
-    }
-  </script>
 </head>
 
 <body>
@@ -37,7 +25,7 @@ HTML = HyperText (Hiper texto = é um texto com link) Markup (Marcação = são 
         </span>
         <img src="images/CCS_2553.jpg" alt="Foto pessoal" />
       </div>
-      <h1>Melissa Bilher</h1>
+      <h1 id="userName">Melissa Bilher</h1>
       <a href="https://github.com/MelissaBilher" target="_blank"><img src="images/github 2.svg" alt="Selo Rocketseat" />
         melbilher</a>
       <p>Formada em Engenharia de Telecomunicações</p>
@@ -60,6 +48,23 @@ HTML = HyperText (Hiper texto = é um texto com link) Markup (Marcação = são 
       </ul>
     </div>
   </main>
+
+  <script>
+    const LinksSocialMedia = {
+      github: 'satheler',
+      youtube: 'UCThu5JcyuoFYjPdorC5GpHQ',
+      facebook: 'gustavo.satheler',
+      instagram: 'gustavosatheler'
+    }
+
+    function changeSocialMediaLinks() {
+      for (let i = 0; i <= 10; i++) {
+        alert(i)
+      }
+    }
+
+    changeSocialMediaLinks()
+  </script>
 </body>
 
 </html>
