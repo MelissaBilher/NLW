@@ -11,7 +11,7 @@ HTML = HyperText (Hiper texto = é um texto com link) Markup (Marcação = são 
 <head>
   <title>Melissa Bilher - DoWhile 2021</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="config.js">
+  <!--<link rel="stylesheet" href="config.js"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
@@ -49,6 +49,28 @@ HTML = HyperText (Hiper texto = é um texto com link) Markup (Marcação = são 
       </ul>
     </div>
   </main>
+  <script>
+
+    const LinksSocialMedia = {
+      github: 'satheler',
+      youtube: 'UCThu5JcyuoFYjPdorC5GpHQ',
+      facebook: 'gustavo.satheler',
+      instagram: 'gustavosatheler',
+      twitter: 'gustavosatheler'
+    }
+
+    function changeSocialMediaLinks() {
+      for (let li of socialLinks.children) {
+        const social = li.getAttribute('class')
+        li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
+        //alert(li.children[0].href)
+      }
+    }
+
+    changeSocialMediaLinks()
+
+
+  </script>
 </body>
 
 </html>
