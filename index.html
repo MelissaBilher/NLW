@@ -11,7 +11,6 @@ HTML = HyperText (Hiper texto = é um texto com link) Markup (Marcação = são 
 <head>
   <title>Melissa Bilher - DoWhile 2021</title>
   <link rel="stylesheet" href="style.css" />
-  <!--<link rel="stylesheet" href="config.js"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
@@ -31,46 +30,26 @@ HTML = HyperText (Hiper texto = é um texto com link) Markup (Marcação = são 
         melbilher</a>
       <p>Formada em Engenharia de Telecomunicações</p>
       <ul id="socialLinks">
-        <li class="youtube">
+        <li social="youtube">
           <a href="https://www.youtube.com/channel/UCFaKp3LxcnHHE3j0zhrQF7A" target="_blank">
             <img src="images/youtube.svg" alt="youtube" /></a>
         </li>
-        <li class="instagram">
+        <li social="instagram">
           <a href="https://www.instagram.com/melbilher/" target="_blank"><img src="images/instagram.svg"
               alt="instagram" /></a>
         </li>
-        <li class="facebook">
+        <li social="facebook">
           <a href="https://www.facebook.com/melbilher" target="_blank"><img src="images/facebook.svg"
               alt="facebook" /></a>
         </li>
-        <li class="twitter">
+        <li social="twitter">
           <a href="https://twitter.com/MelBilher" target="_blank"><img src="images/twitter.svg" alt="twitter" /></a>
         </li>
       </ul>
     </div>
   </main>
-  <script>
 
-    const LinksSocialMedia = {
-      github: 'satheler',
-      youtube: 'UCThu5JcyuoFYjPdorC5GpHQ',
-      facebook: 'gustavo.satheler',
-      instagram: 'gustavosatheler',
-      twitter: 'gustavosatheler'
-    }
-
-    function changeSocialMediaLinks() {
-      for (let li of socialLinks.children) {
-        const social = li.getAttribute('class')
-        li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
-        //alert(li.children[0].href)
-      }
-    }
-
-    changeSocialMediaLinks()
-
-
-  </script>
+  <script src="config.js"></script>
 </body>
 
 </html>
