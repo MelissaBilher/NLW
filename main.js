@@ -1,9 +1,9 @@
 const LinksSocialMedia = {
-  github: 'satheler',
-  youtube: 'UCThu5JcyuoFYjPdorC5GpHQ',
-  facebook: 'gustavo.satheler',
-  instagram: 'gustavosatheler',
-  twitter: 'gustavosatheler'
+  github: 'MelissaBilher',
+  youtube: 'UCFaKp3LxcnHHE3j0zhrQF7A',
+  facebook: 'melbilher',
+  instagram: 'melbilher',
+  twitter: 'melbilher'
 }
 
 function changeSocialMediaLinks() {
@@ -16,14 +16,18 @@ function changeSocialMediaLinks() {
 
 changeSocialMediaLinks()
 
-function getGitHubProfileInfos(){
-const url = `https://api.github.com/users/${LinksSocialMedia.github}`
+function getGitHubProfileInfos() {
+  const url = `https://api.github.com/users/${LinksSocialMedia.github}`
 
-fetch(url).then(response => response.json()).then(data => {userName.textContent = data.name
-userBio.textContent = data.bio
-userLink.href = data.html_url
-userImage.src = data.avatar_url
-userLogin.textContent = data.login})
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      userName.textContent = data.name
+      userBio.textContent = data.bio
+      userLink.href = data.html_url
+      userImage.src = data.avatar_url
+      userLogin.textContent = data.login
+    })
 }
 
 getGitHubProfileInfos()
